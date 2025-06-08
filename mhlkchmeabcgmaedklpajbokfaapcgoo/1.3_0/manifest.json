@@ -1,0 +1,19 @@
+{
+   "background": {
+      "scripts": [ "service_worker.js" ],
+      "service_worker": "service_worker.js"
+   },
+   "content_scripts": [ {
+      "js": [ "content_script.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": {
+   },
+   "description": "Renames tabs to: \"\u003Cindex> \u003Coriginal_name> \u003Chostname>\".",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtzAkqlrZ+z1bX/ZC/SJmbvwLA+tO8OypH4mNxk87yYNa0+NON8DTi51R0fd9g+MPp+AM2V6XD2fK2mPAaY6bGkDC8wg//ddz4WcNSPasd9ngLpICsnHqNynaMbysYnVMS+HtLcN0govsv3HBTrCRf+jQi92I6TGLPdEiBcGUQj91wwzUnM3GX1qQO5qTYKauJSiJnVHSGLlZuYZWs1sxQ1jh9JTTP4ZoCDc5YokOPYjllrxQ7wgFH86bxl+1+SAWYbaNtpsmjGfkPv4eC+AuMuQpd9G948loINDuH0vrDWzZLmRxs+uFWhz+OmliAyzZGKbLPKMOJtm09C9rMBRxDwIDAQAB",
+   "manifest_version": 3,
+   "name": "Tab Namer",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.3"
+}
